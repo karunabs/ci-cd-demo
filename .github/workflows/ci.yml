@@ -24,5 +24,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
+deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: echo "Deploying application..."
+
+
     - name: Run tests
       run: pytest
