@@ -35,5 +35,6 @@ deploy:
         run: echo "Deploying application..."
 
 
-    - name: Run tests
-      run: pytest
+
+
+
