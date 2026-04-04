@@ -26,4 +26,6 @@ def test_create_data_one(create_data):
 def test_create_data_two(create_data):
   create_data["name"].append("test2")
   assert create_data["name"] == ["test2"]
-  
+
+def test_ssh_session(ssh_session):
+  assert ssh_session == "SSH Connection"
