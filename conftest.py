@@ -16,4 +16,11 @@ def calculator():
 
   return Calculator()
 
+## This demonstrates db_connection fixture is created for the entire session
+@pytest.fixture(scope="session")
+def db_connection():
+  ## setup a db connection
+  connection = "DB Connection"
+  yield connection
+  ## Teardown connection
 
