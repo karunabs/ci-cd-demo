@@ -24,3 +24,12 @@ def db_connection():
   yield connection
   ## Teardown connection
 
+@pytest.fixture(scope="function")
+def create_data():
+  ## creating fresh data for the tests
+  data = {"name": []}
+  yield data
+  ## cleaning up after test runs
+
+
+  
