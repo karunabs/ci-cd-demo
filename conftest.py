@@ -31,5 +31,10 @@ def create_data():
   yield data
   ## cleaning up after test runs
 
-
+@pytest.fixture(scope="module")
+def ssh_session():
+  ## creates a ssh connection to a host
+  session == "SSH Session"
+  yield session
+  ## close ssh session
   
