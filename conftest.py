@@ -20,7 +20,7 @@ def calculator():
 @pytest.fixture(scope="session")
 def db_connection():
   ## setup a db connection
-  connection = "DB Connection"
+  connection = "Database Connection"
   yield connection
   ## Teardown connection
 
