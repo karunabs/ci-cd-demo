@@ -9,7 +9,7 @@ def numbers():
   return 2,3
 
 @pyteest.fixture():
-def calclulator():
+def calculator():
   class Calculator:
     def add_func(self, a, b):
       return a + b
