@@ -18,3 +18,12 @@ def test_add_func_calculator(calculator):
 def test_query_db(db_connection):
   ## here db connection is valid for the entire session
   assert db_connection == "Database Connection"
+
+def test_create_data_one(create_data):
+  create_data["name"].append("test1")
+  assert create_data["name"] == ["test1"]
+
+def test_create_data_two(create_data):
+  create_data["name"].append("test2")
+  assert create_data["name"] == ["test2"]
+  
