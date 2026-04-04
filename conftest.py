@@ -8,7 +8,7 @@ def numbers():
   
   return 2,3
 
-@pyteest.fixture()
+@pytest.fixture()
 def calculator():
   class Calculator:
     def add_func(self, a, b):
